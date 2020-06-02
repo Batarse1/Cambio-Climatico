@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">¡Bienvenido/a!</h1>
+    <p>Tutorial de ASP.NET: <a href="https://www.youtube.com/watch?v=lE8NdaX97m0&list=PLdo4fOcmZ0oW8nviYduHq7bmKode-p8Wy">Click aquí</a>.</p>
+</div>
+<div class="table-responsive table-hover">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th class="text-center">Carnet</th>
+                <th class="text-center">Nombres</th>
+                <th class="text-center">Apellidos</th>
+                <th class="text-center">Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var est in Model.Estudiante)
+            {
+                <tr>
+                    <td class="text-center">@est.carnet</td>
+                    <td class="text-center">@est.nombres</td>
+                    <td class="text-center">@est.apellidos</td>
+                    <td class="text-center">@est.edad</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

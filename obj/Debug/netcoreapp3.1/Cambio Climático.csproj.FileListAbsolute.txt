@@ -1,0 +1,38 @@
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.exe
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.deps.json
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.runtimeconfig.json
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.runtimeconfig.dev.json
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.dll
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.pdb
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.Views.dll
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Cambio Climático.Views.pdb
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.csprojAssemblyReference.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.AssemblyInfoInputs.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.AssemblyInfo.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.RazorAssemblyInfo.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.RazorAssemblyInfo.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.TagHelpers.input.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.TagHelpers.output.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.RazorCoreGenerate.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.RazorTargetAssemblyInfo.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.RazorTargetAssemblyInfo.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.Views.pdb
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\staticwebassets\Cambio Climático.StaticWebAssets.Manifest.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\staticwebassets\Cambio Climático.StaticWebAssets.xml
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.dll
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.pdb
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.genruntimeconfig.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.csproj.CopyComplete
+C:\Repositories\Cambio Climático\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.csproj.CoreCompileInputs.cache
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Cambio Climático.MvcApplicationPartsAssemblyInfo.cache
