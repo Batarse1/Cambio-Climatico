@@ -6,10 +6,59 @@
     <title>@ViewData["Title"] - Cambio Climático</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="shortcut icon" type="jpg-icon" href="~/Resources/presa.ico" />
+    <style>
+        .masthead {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 35rem;
+            padding: 15rem 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%, #000000 100%), url("https://media.discordapp.net/attachments/366773711862497295/729108577012154368/central-salvador.png?width=1015&height=677");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        header {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -0.75rem;
+            margin-left: -0.75rem;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .img-container {
+            width: 70%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Cambio Climático</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -19,8 +68,14 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Password">Inicio</a>
                         </li>
+                        <li class="nav-item">
+                        </li>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Investigation">Investigación</a>
+                        <li class="nav-item">
+                        </li>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Password">Iniciar Sesión</a>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacidad</a>
                         </li>
@@ -29,7 +84,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid" style="padding:0;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -37,7 +92,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - Cambio Climático - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <!--&copy; 2020 - Cambio Climático - <a asp-area="" asp-page="/Privacy">Privacy</a>-->
         </div>
     </footer>
 
