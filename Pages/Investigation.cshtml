@@ -12,73 +12,48 @@
                 <h3 class="text-white-50 mx-auto mt-2 mb-5">En esta sección usted podrá añadir sus credenciales y agregar el informe que ha obtenido mediante su observación de la presa</h3>
             </div>
         </div>
-        <hr>
-        <form>
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <label for="validationServer01">First name</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre" value="Alessandro" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationServer02">Last name</label>
-                    <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Apellido" value="Rodríguez" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Usuario</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend3"></span>
-                        </div>
-                        <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Usuario" aria-describedby="inputGroupPrepend3" required>
-                        <div class="invalid-feedback">
-                            Favor añada su usuaio.
-                        </div>
-                    </div>
-                </div>
+    </header>
+    <hr>
+    <form class="container">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre" value="" required>
             </div>
-            <div class="form-row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationServer03">Ciudad</label>
-                    <input type="text" id="validationServer03" placeholder="Ciudad" required>
-                    <div class="invalid-feedback">
-                        Favor añada su ciudad.
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationServer04">País</label>
-                    <input type="text" id="validationServer04" placeholder="País" required>
-                    <div class="invalid-feedback">
-                        Favor añada su País.
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationServer05">Agencia</label>
-                    <input type="text" placeholder="Agencia" required>
-                    Favor añada su Agencia.
-                    </div>
-                </div>
+            <div class="col-md-4 mb-3">
+                <label>Apellido</label>
+                <input type="text" class="form-control" placeholder="Apellido" value="" required>
             </div>
-        </form>
-        <hr>
-        <div class="form-group">
-            <label for="comment">El siguiente cuadro es por si desea añadir algún comentaro aparte de sobre el archivo anexado:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
+            <div class="col-md-4 mb-3">
+                <label>Agencia</label>
+                <input type="text" class="form-control" placeholder="Agencia" value="" required>
+            </div>
         </div>
-        <hr>
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlFile1">En esta apartado puedes seleccionar el archivo a subir </label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre" value="" required>
             </div>
-        </form>
-        <hr>
-        <form>
-            <button type="button" class="btn btn-primary">Enviar</button>
-            <button type="button" class="btn btn-secondary">Cancelar</button>
-        </form>
+            <div class="col-md-4 mb-3">
+                <label>Apellido</label>
+                <input type="text" class="form-control" placeholder="Apellido" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Agencia</label>
+                <input type="text" class="form-control" placeholder="Agencia" value="" required>
+            </div>
+        </div>
+    </form>
+    <div class="form-group container">
+        <label for="comment">El siguiente cuadro es por si desea añadir algún comentaro aparte de sobre el archivo anexado:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <form class="container">
+        <div class="form-group">
+            <label for="exampleFormControlFile1">En esta apartado puedes seleccionar el archivo a subir </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile">
+        </div>
+    </form>
+    <form class="container">
+        <button type="button" class="btn btn-primary">Enviar</button>
+    </form>
