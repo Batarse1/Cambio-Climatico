@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="shortcut icon" type="jpg-icon" href="~/Resources/presa.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <style>
+
         .masthead {
             position: relative;
             width: 100%;
@@ -21,7 +23,18 @@
             background-size: cover;
         }
 
-    .GraphHead { position: relative; width: 100%; height: auto; min-height: 35rem; padding: 15rem 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%, #000000 100%), url("https://cdn.discordapp.com/attachments/366773711862497295/729905008186884146/Grafico-background.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+        .GraphHead {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 35rem;
+            padding: 15rem 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%, #000000 100%), url("https://media.discordapp.net/attachments/366773711862497295/729108577012154368/central-salvador.png?width=1015&height=677");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
 
         header {
             margin: 0 0 0 0;
@@ -56,13 +69,48 @@
             margin-right: auto;
             margin-left: auto;
         }
+
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive columns */
+        screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 16px;
+          text-align: center;
+          background-color: #f1f1f1;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
             <div role="main" class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Cambio Climático</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Inicio</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -70,17 +118,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Password">Inicio</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Investigation">Información</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Graphics">Gráficos</a>
                         </li>
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Investigation">Investigación</a>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Investigations">Investigaciones</a>
                         </li>
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Password">Iniciar Sesión</a>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacidad</a>
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Password">Iniciar Sesión</a>
                         </li>
                     </ul>
                 </div>

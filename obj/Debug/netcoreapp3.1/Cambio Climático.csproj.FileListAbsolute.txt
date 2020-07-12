@@ -346,3 +346,4 @@ C:\Users\drodr\Documents\Cambio Climatico\Cambio-Climatico\obj\Debug\netcoreapp3
 C:\Users\drodr\Documents\Cambio Climatico\Cambio-Climatico\obj\Debug\netcoreapp3.1\Cambio Climático.pdb
 C:\Users\drodr\Documents\Cambio Climatico\Cambio-Climatico\obj\Debug\netcoreapp3.1\Cambio Climático.genruntimeconfig.cache
 C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Graphics.cshtml.g.cs
+C:\Repositories\Cambio Climático\obj\Debug\netcoreapp3.1\Razor\Pages\Investigations.cshtml.g.cs
