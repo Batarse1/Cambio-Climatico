@@ -72,38 +72,42 @@
 
         /* Float four columns side by side */
         .column {
-          float: left;
-          width: 50%;
-          padding: 0 10px;
+            float: left;
+            width: 50%;
+            padding: 0 10px;
         }
 
         /* Remove extra left and right margins, due to padding */
-        .row {margin: 0 -5px;}
-
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
+        .row {
+            margin: 0 -5px;
         }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
 
         /* Responsive columns */
         screen and (max-width: 600px) {
-          .column {
+            .column
+
+        {
             width: 100%;
             display: block;
             margin-bottom: 20px;
-          }
+        }
+
         }
 
         /* Style the counter cards */
         .card {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
         }
-
     </style>
 </head>
 <body>
@@ -115,7 +119,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collaps">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Plants">Información</a>
@@ -126,11 +130,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Investigations">Investigaciones</a>
                         </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Password">Iniciar Sesión</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/User">Administrar Usuario</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/User">Opciones de usuario</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Plants">Administrar Centrales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Investigation">Administrar Investigaciones</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Password">Iniciar Sesión</a>
                         </li>
                     </ul>
                 </div>

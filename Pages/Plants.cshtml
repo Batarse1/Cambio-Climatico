@@ -4,117 +4,105 @@
     ViewData["Title"] = "Plants";
 }
 
-    <form class="container" style="height:100%; vertical-align: middle; margin-top:3rem;">
-        <!--Actualizar Central Hidroeléctrica-->
-        <label style="margin-bottom:0rem; font-weight: bold;">Actualizar Datos de Energía</label>
-        <hr />
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Central Hidroeléctrica</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
+<form class="container" style="height:100%; vertical-align: middle; margin-top:3rem;">
+    <!--Actualizar Central Hidroeléctrica-->
+    <h1 style="margin-bottom:0rem; font-weight: bold; text-align:center;">Actualizar Datos de Energía</h1>
+    <hr />
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Central Hidroeléctrica</label>
         </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Periodo</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Periodo</label>
         </div>
-        <div class="col-md-12 mb-3" style="padding:0rem;">
-            <label>Nuevo valor</label>
-            <input type="number" class="form-control" placeholder="Valor" min="0" value="0" step="0.01" required>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="col-md-12 mb-3" style="padding:0rem;">
+        <label>Nuevo valor</label>
+        <input type="number" class="form-control" placeholder="Valor" min="0" value="0" step="0.01" required>
+    </div>
+    <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Actualizar</button>
+    </div>
+    <!--Permitir visibilidad de investigaciones-->
+    <h1 style="margin-bottom:0rem; margin-top:5rem; font-weight: bold; text-align:center;">Permitir visibilidad de investigaciones</h1>
+    <table class="table table-hover" style="margin-top:1rem;">
+        <thead>
+            <tr>
+                <th scope="col">Investigación</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Correo electrónico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.facebook.com/">Investigacion 1</a></td>
+                <td>Luis</td>
+                <td>jewlkrjwk@jhotamil.com</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/html/html_links.asp">Investigacion 2</a></td>
+                <td>Ricky</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/">Investigacion 3</a></td>
+                <td>Alessandro</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Investigación</label>
         </div>
-        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Actualizar</button>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Permitir</button>
+    </div>
+    <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+        <button type="button" class="btn btn-primary btn-lg btn-block">No Permitir</button>
+    </div>
+    <!--Actualizar Central Hidroeléctrica-->
+    <h1 style="text-align: center; margin-bottom: 0rem; margin-top:5rem; font-weight: bold;">Actualizar Central Hidroeléctrica</h1>
+    <hr />
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Central Hidroeléctrica</label>
         </div>
-        <!--Permitir visibilidad de investigaciones-->
-        <label style="margin-bottom:0rem; font-weight: bold;">Permitir visibilidad de investigaciones</label>
-        <table class="table table-hover" style="margin-top:1rem;">
-            <thead>
-                <tr>
-                    <th scope="col">Investigación</th>
-                    <th scope="col">Autor</th>
-                    <th scope="col">Correo electrónico</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="https://www.facebook.com/">Investigacion 1</a></td>
-                    <td>Luis</td>
-                    <td>jewlkrjwk@jhotamil.com</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.w3schools.com/html/html_links.asp">Investigacion 2</a></td>
-                    <td>Ricky</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.youtube.com/">Investigacion 3</a></td>
-                    <td>Alessandro</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Investigación</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </div>
-        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Permitir</button>
-        </div>
-        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
-            <button type="button" class="btn btn-primary btn-lg btn-block">No Permitir</button>
-        </div>
-        <!--Agregar Central Hidroeléctrica-->
-        <label style="margin-bottom:0rem; font-weight: bold;">Agregar Central Hidroeléctrica</label>
-        <hr />
-        <div class="col-md-12 mb-3" style="padding:0rem;">
-            <label>Nombre de la central hidroeléctrica</label>
-            <input type="text" class="form-control" placeholder="Nombre" value="" required>
-            <label>Ubicación de la central hidroeléctrica</label>
-            <input type="text" class="form-control" placeholder="Ubicación" value="" required>
-        </div>
-        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Agregar</button>
-        </div>
-        <!--Actualizar Central Hidroeléctrica-->
-        <label style="margin-bottom:0rem; font-weight: bold;">Actualizar Central Hidroeléctrica</label>
-        <hr />
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Central Hidroeléctrica</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </div>
-        <div class="col-md-12 mb-3" style="padding:0rem;">
-            <label>Nuevo nombre de la central hidroeléctrica</label>
-            <input type="text" class="form-control" placeholder="Nombre" value="" required>
-            <label>Nueva ubicación de la central hidroeléctrica</label>
-            <input type="text" class="form-control" placeholder="Ubicación" value="" required>
-        </div>
-        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Actualizar</button>
-        </div>
-    </form>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="col-md-12 mb-3" style="padding:0rem;">
+        <label>Nuevo nombre de la central hidroeléctrica</label>
+        <input type="text" class="form-control" placeholder="Nombre" value="" required>
+        <label>Nueva ubicación de la central hidroeléctrica</label>
+        <input type="text" class="form-control" placeholder="Ubicación" value="" required>
+    </div>
+    <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Actualizar</button>
+    </div>
+</form>

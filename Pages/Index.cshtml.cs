@@ -11,8 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace Cambio_Climático.Pages
 {
     public class IndexModel : PageModel
-    {
-        public IEnumerable<Estudiante> Estudiante { get; private set; }
+    {       
 
         private readonly ILogger<IndexModel> _logger;
 
@@ -23,7 +22,7 @@ namespace Cambio_Climático.Pages
 
         public void OnGet()
         {
-            Estudiante = EstudianteController.GetEstudiante();
+            
         }
     }
 }

@@ -3,35 +3,19 @@
 @{
     ViewData["Title"] = "User";
 }
-
-<header>
-    <div class="d-flex h-100 align-items-center masthead">
-        <div class="mx-auto text-center">
-            <h1 class="text-white mx-auto my-0 text-uppercase">Usuarios</h1>
-            <h3 class="text-white-50 mx-auto mt-2 mb-5">En esta sección usted podrá añadir o eliminar usuarios</h3>
-        </div>
-    </div>
-</header>
-<hr>
-<form class="container">
+<form class="container" style="height:100%; vertical-align: middle; margin-top:3rem;">
     <div class="mx-auto text-center">
         <h1>Crear usuario</h1>
     </div>
-</form>
-<hr />
-<form class="container">
+    <hr />
     <div class="form-row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-12">
             <label>Nombre</label>
             <input type="text" class="form-control" placeholder="Nombre completo" value="" required>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-12">
             <label>Correo electrónico</label>
             <input type="text" class="form-control" placeholder="Correo electrónico" value="" required>
-        </div>
-        <div class="col-md-4 mb-3">
-            <label>Agencia</label>
-            <input type="text" class="form-control" placeholder="Agencia" value="" required>
         </div>
     </div>
     <div class="form-group">
@@ -42,26 +26,22 @@
         <label>Repetir contraseña</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repetir contraseña">
     </div>
-</form>
-<hr>
-<form class="container">
     <div class="mx-auto text-center">
         <h1>Eliminar usuario</h1>
     </div>
-</form>
-<hr />
-<form class="container">
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Usuario a eliminar
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Ricky</a>
-            <a class="dropdown-item" href="#">Luis</a>
-            <a class="dropdown-item" href="#">Batar</a>
+    <hr />
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Usuario</label>
         </div>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Ricky</option>
+            <option value="2">Ticky</option>
+            <option value="3">Gei</option>
+        </select>
     </div>
-    <div style="margin-top:3rem">
-        <button type="button" class="btn btn-outline-danger">Eliminar</button>
-     </div>
+    <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+        <button type="button" class="btn btn-primary btn-danger btn-lg btn-block">Eliminar</button>
+    </div>
 </form>

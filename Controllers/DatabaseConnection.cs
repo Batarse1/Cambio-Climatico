@@ -4,12 +4,12 @@ using Npgsql;
 
 namespace Cambio_Climático.Controllers
 {
-    public class DatabaseConnection
+    public static class DatabaseConnection
     {
-        private static string host = "ec2-54-197-48-79.compute-1.amazonaws.com",
-            dataBase = "derba0celo0cn1",
-            userID = "jgorehjqolkexn",
-            Password = "400d5ebc86f6bc28861f700cd565906cdca0a89e016fa824f766156453bfe980";
+        private static string host = "ec2-34-192-173-173.compute-1.amazonaws.com",
+            dataBase = "d8fh1lbfhq1uhj",
+            userID = "mptuttmhstnajm",
+            Password = "1146110d504a92b1d41635c54e75590521031ccf9c562721dbe90babf624992f";
 
 
         private static string sConnection =
@@ -30,7 +30,6 @@ namespace Cambio_Climático.Controllers
             connection.Close();
 
             return ds.Tables[0];
-
         }
 
         public static void ExecuteNonQuery(string act)

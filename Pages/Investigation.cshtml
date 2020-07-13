@@ -4,55 +4,55 @@
     ViewData["Title"] = "Investigation";
 }
 
-    <header>
-        <div class="d-flex h-100 align-items-center masthead">
-            <div class="mx-auto text-center">
-                <h1 class="text-white mx-auto my-0 text-uppercase">Sección de investigación</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">¡Bienvenidos! </h2>
-                <h3 class="text-white-50 mx-auto mt-2 mb-5">En esta sección usted podrá añadir sus credenciales y agregar el informe que ha obtenido mediante su observación de la presa</h3>
+<header>
+    <div class="d-flex h-100 align-items-center masthead">
+        <div class="mx-auto text-center">
+            <h1 class="text-white mx-auto my-0 text-uppercase">Sección de investigación</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">¡Bienvenidos! </h2>
+            <h3 class="text-white-50 mx-auto mt-2 mb-5">En esta sección usted podrá añadir sus credenciales y agregar el informe que ha obtenido mediante su observación de la presa</h3>
+        </div>
+    </div>
+</header>
+<hr>
+<div class="d-flex h-100 align-items-center masthead">
+    <div class="mx-auto text-center">
+        <h1 class="text-white mx-auto my-0 text-uppercase">Crear investigación</h1>
+    </div>
+    <form class="container">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre inestigación" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Agencia</label>
+                <input type="text" class="form-control" placeholder="Agencia" value="" required>
             </div>
         </div>
-    </header>
+    </form>
+    <form class="container">
+        <div class="form-group">
+            <label for="exampleFormControlFile1">En esta apartado puedes seleccionar el archivo a subir </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile">
+        </div>
+    </form>
+    <form class="container">
+        <button type="button" class="btn btn-primary">Enviar</button>
+    </form>
     <hr>
     <div class="d-flex h-100 align-items-center masthead">
         <div class="mx-auto text-center">
-            <h1 class="text-white mx-auto my-0 text-uppercase">Crear investigación</h1>
+            <h1 class="text-white mx-auto my-0 text-uppercase">Eliminar investigación</h1>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Investigaciones
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Investigación 1</a>
+                <a class="dropdown-item" href="#">Investigación 2</a>
+            </div>
         </div>
         <form class="container">
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" placeholder="Nombre inestigación" value="" required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label>Agencia</label>
-                    <input type="text" class="form-control" placeholder="Agencia" value="" required>
-                </div>
-            </div>
+            <button type="button" class="btn btn-primary">Eliminar</button>
         </form>
-        <form class="container">
-            <div class="form-group">
-                <label for="exampleFormControlFile1">En esta apartado puedes seleccionar el archivo a subir </label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile">
-            </div>
-        </form>
-        <form class="container">
-            <button type="button" class="btn btn-primary">Enviar</button>
-        </form>
-        <hr>
-        <div class="d-flex h-100 align-items-center masthead">
-            <div class="mx-auto text-center">
-                <h1 class="text-white mx-auto my-0 text-uppercase">Eliminar investigación</h1>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Investigaciones
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Investigación 1</a>
-                    <a class="dropdown-item" href="#">Investigación 2</a>
-                </div>
-            </div>
-            <form class="container">
-                <button type="button" class="btn btn-primary">Eliminar</button>
-            </form>
