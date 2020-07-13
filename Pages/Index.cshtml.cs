@@ -11,7 +11,8 @@ using Microsoft.Extensions.Logging;
 namespace Cambio_Climático.Pages
 {
     public class IndexModel : PageModel
-    {       
+    {
+        public List<Central> centrales{ get; private set; }
 
         private readonly ILogger<IndexModel> _logger;
 
@@ -22,7 +23,7 @@ namespace Cambio_Climático.Pages
 
         public void OnGet()
         {
-            
+            centrales = CentralController.CentralList();
         }
     }
 }
