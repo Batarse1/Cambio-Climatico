@@ -1,0 +1,101 @@
+﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using Controllers
+@using Models
+
+
+    <div class="container" style="height:100%; vertical-align: middle; margin-top:3rem;">
+        <!--Actualizar Central Hidroeléctrica-->
+        <h1 style="margin-bottom:0rem; font-weight: bold; text-align:center;">Actualizar Datos de Energía</h1>
+        <hr />
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Central Hidroeléctrica</label>
+            </div>
+            <select class="custom-select" @bind="central_id">
+                @for (int i = 0; i < centralList.Count; i++)
+                {
+                    <option value=@i>@centralList[i].nombre  </option>
+                }
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Periodo</label>
+            </div>
+            <select class="custom-select" @bind="periodo_id">
+                @for (int i = 0; i < periodoList.Count; i++)
+                {
+                    <option value=@i>@periodoList[i]  </option>
+                }
+            </select>
+        </div>
+        <div class="col-md-12 mb-3" style="padding:0rem;">
+            <label>Nuevo valor</label>
+            <input type="number" class="form-control" placeholder="Valor" min="0" step="0.01" @bind-value="nuevoValor" required>
+        </div>
+        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+            <button @onclick="(e=>UpdateEnergia())" class="btn btn-primary btn-lg btn-block">Actualizar</button>
+        </div>
+        <p>@mns_secreto1</p>
+        <!--Actualizar Central Hidroeléctrica-->
+        <h1 style="text-align: center; margin-bottom: 0rem; margin-top:5rem; font-weight: bold;">Actualizar Central Hidroeléctrica</h1>
+        <hr />
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Central Hidroeléctrica</label>
+            </div>
+            <select class="custom-select" @bind="central_aux_id">
+                @for (int i = 0; i < centralList.Count; i++)
+                {
+                    <option value=@i>@centralList[i].nombre  </option>
+                }
+            </select>
+        </div>
+        <div class="col-md-12 mb-3" style="padding:0rem;">
+            <label>Nuevo nombre de la central hidroeléctrica</label>
+            <input type="text" class="form-control" placeholder="Nombre de la Central" @bind="nombreCentral" required>
+            <label>Nueva ubicación de la central hidroeléctrica</label>
+            <input type="text" class="form-control" placeholder="Ubicación de la Central" @bind="ubicacionCentral" required>
+        </div>
+        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+            <button @onclick="(e=>UpdateCentral())" class="btn btn-primary btn-lg btn-block">Actualizar</button>
+        </div>
+        <p>@mns_secreto2</p>
+    </div>
+
+@code {
+    List<Central> centralList = CentralController.CentralList();
+    int central_id;
+    int central_aux_id;
+    List<string> periodoList = CentralController.PeriodoList();
+
+    int periodo_id;
+
+    float nuevoValor;
+    string mns_secreto1;
+    string mns_secreto2;
+    string nombreCentral;
+    string ubicacionCentral;
+
+    public void UpdateEnergia()
+    {
+        if (periodo_id == 0)
+        {
+            mns_secreto1 = CentralController.UpdateEnergy(centralList[central_id].id, "e_anual", nuevoValor);
+        }
+        else if (periodo_id == 1)
+        {
+            mns_secreto1 = CentralController.UpdateEnergy(centralList[central_id].id, "e_mensual", nuevoValor);
+        }
+        else
+        {
+            mns_secreto1 = CentralController.UpdateEnergy(centralList[central_id].id, "e_semanal", nuevoValor);
+        }
+    }
+
+    public void UpdateCentral()
+    {
+        mns_secreto2 = CentralController.UpdateCentral(centralList[central_aux_id].id,nombreCentral,ubicacionCentral);
+    }
+}   

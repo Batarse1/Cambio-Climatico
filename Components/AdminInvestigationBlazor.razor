@@ -1,0 +1,88 @@
+﻿    @using Microsoft.AspNetCore.Components
+    @using Microsoft.AspNetCore.Components.Web
+    @using Controllers
+    @using Models
+    <div class="container" style="height:100%; vertical-align: middle; margin-top:3rem;">
+        <!--Permitir visibilidad de investigaciones-->
+        <h1 style="margin-bottom:0rem; margin-top:5rem; font-weight: bold; text-align:center;">Permitir visibilidad de investigaciones</h1>
+        <table class="table table-hover" style="margin-top:1rem;">
+            <thead>
+                <tr>
+                    <th scope="col">Investigación</th>
+                    <th scope="col">Agencia</th>
+                    <th scope="col">Correo electrónico</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var e in investigationlList)
+                {
+                    <tr>
+                        <td><a href="@e.link">@e.nombre</a></td>
+                        <td>@e.agencia</td>
+                        <td>@e.correo</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Investigación</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01" @bind="investigacion_id">
+                @for (int i = 0; i < investigationlList.Count; i++)
+                {
+                    <option value=@i>@investigationlList[i].nombre  </option>
+                }
+            </select>
+        </div>
+        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+            <button @onclick="(e=>UpdateVisibilityTrue())" class="btn btn-primary btn-lg btn-block">Permitir</button>
+        </div>
+        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+            <button @onclick="(e=>UpdateVisibilityFalse())" class="btn btn-primary btn-lg btn-block">No Permitir</button>
+        </div>
+        <!--Eliminar investigacion-->
+        <p>@mns_secreto_aux</p>
+        <div class="mx-auto text-center">
+            <h1>Eliminar Investigacion</h1>
+        </div>
+        <hr />
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Investigación</label>
+            </div>
+            <select class="custom-select" @bind="investigacion_id_aux">
+                @for (int i = 0; i < investigationlList.Count; i++)
+                {
+                    <option value=@i>@investigationlList[i].nombre  </option>
+                }
+            </select>
+        </div>
+        <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
+            <button @onclick="(e=>remove())" class="btn btn-primary btn-danger btn-lg btn-block">Eliminar</button>
+        </div>
+        <p>@mns_secreto3</p>
+    </div>
+
+@code {
+    List<Investigacion> investigationlList = InvestigationController.InvestigacionList();
+    int investigacion_id;
+    int investigacion_id_aux;
+    string mns_secreto3;
+    string mns_secreto_aux;
+
+    public void remove()
+    {
+        mns_secreto3 = InvestigationController.removeInvestigation(investigationlList[investigacion_id_aux].id);
+    }
+
+    public void UpdateVisibilityTrue()
+    {
+        mns_secreto_aux = InvestigationController.UpdateInvestigation(true, investigationlList[investigacion_id].id);
+    }
+
+    public void UpdateVisibilityFalse()
+    {
+        mns_secreto_aux = InvestigationController.UpdateInvestigation(false, investigationlList[investigacion_id].id);
+    }
+}

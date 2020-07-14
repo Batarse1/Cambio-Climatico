@@ -26,5 +26,37 @@ namespace Cambio_Climático.Controllers
             }
             return l;
         }
+
+        public static List<string> PeriodoList()
+        {
+            string[] inputPeriodoList = { "Anual", "Mensual", "Semanal" };
+            List<string> periodoList = new List<string>(inputPeriodoList);
+            return periodoList;
+        }
+
+       public static string UpdateEnergy(int id_central,string periodo, float nuevoValor)
+        {
+            try
+            {
+                DatabaseConnection.ExecuteNonQuery($"UPDATE CENTRAL SET {periodo} = {nuevoValor} WHERE id_central = {id_central}");
+                return "Actualizada con exito";
+            }
+            catch(Exception)
+            {
+                return "Ha ocurrido un error, no se ha actualizado";
+            }
+        }
+        public static string UpdateCentral(int id_central, string nombre, string ubicacion)
+        {
+            try
+            {
+                DatabaseConnection.ExecuteNonQuery($"UPDATE CENTRAL SET c_nombre = '{nombre}', ubicacion = '{ubicacion}' WHERE id_central = {id_central}");
+                return "Actualizada con exito";
+            }
+            catch (Exception)
+            {
+                return "Ha ocurrido un error, no se ha actualizado";
+            }
+        }
     }
 }

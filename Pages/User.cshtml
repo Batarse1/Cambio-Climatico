@@ -1,47 +1,11 @@
 ﻿@page
+@using Components
 @model Cambio_Climático.Pages.UserModel
 @{
     ViewData["Title"] = "User";
 }
-<form class="container" style="height:100%; vertical-align: middle; margin-top:3rem;">
-    <div class="mx-auto text-center">
-        <h1>Crear usuario</h1>
-    </div>
-    <hr />
-    <div class="form-row">
-        <div class="col-md-6 mb-12">
-            <label>Nombre</label>
-            <input type="text" class="form-control" placeholder="Nombre completo" id="Nombre1" value="" required>           
-        </div>
-        <div class="col-md-6 mb-12">
-            <label>Correo electrónico</label>
-            <input type="text" class="form-control" placeholder="Correo electrónico" id="Correo1" value="" required>
-        </div>
-    </div>
-    <div class="form-group">
-        <label>Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-    </div>
-    <div class="form-group">
-        <label>Repetir contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repetir contraseña">
-    </div>
-    <div class="mx-auto text-center">
-        <h1>Eliminar usuario</h1>
-    </div>
-    <hr />
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">Usuario</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect01">
-            <option selected>Choose...</option>
-            <option value="1">Ricky</option>
-            <option value="2">Ticky</option>
-            <option value="3">Gei</option>
-        </select>
-    </div>
-    <div class="container-fluid col-12" style="padding:0rem; margin-bottom:1rem;">
-        <button type="button" class="btn btn-primary btn-danger btn-lg btn-block">Eliminar</button>
-    </div>
-</form>
+
+
+@(await Html.RenderComponentAsync<UserBlazor>(RenderMode.ServerPrerendered))
+
+    <script src="_framework/blazor.server.js"></script>

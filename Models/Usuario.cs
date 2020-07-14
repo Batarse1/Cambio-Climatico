@@ -12,7 +12,7 @@ namespace Cambio_Climático.Models
         public string contrasena { get; set; }
         public bool tipo { get; set; }
 
-        public Usuario(string nombre, string correo, string contrasena, bool tipo)
+        public Usuario(string correo, string nombre, string contrasena, bool tipo)
         {
             this.nombre = nombre;
             this.correo = correo;

@@ -1,0 +1,10 @@
+﻿@page
+@using Components
+@model Cambio_Climático.Pages.AdminInvestigationModel
+@{
+    ViewData["Title"] = "AdminInvestigation";
+}
+
+@(await Html.RenderComponentAsync<AdminInvestigationBlazor>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>

@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using Controllers
+@using Models
+
+<div class="container">
+    <div class="form-signin" style="height:100%; vertical-align: middle; margin-top:10rem;">
+        <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">INICIAR SESIÓN</h1>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" @bind-value="loginEmail" required autofocus>
+        <label></label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" @bind-value="loginPassword" required>
+        <label></label>
+        <button type="button" class="btn btn-lg btn-primary btn-block" @onclick="(e=>loginFunction())">Iniciar Sesión</button>
+        <p>@mns_secreto1</p>
+    </div>
+</div>
+@code {
+    string loginEmail;
+    string loginPassword;
+    string mns_secreto1;
+    void loginFunction()
+    {
+        int opt = UserController.login(loginEmail,loginPassword);
+        if (opt == -1)
+        {
+            mns_secreto1 = "El correo introducido es inexistente";
+        }
+        else if(opt == 1) {
+            mns_secreto1 = "Bienvenido Administrador";
+            GlobalAtributtes.adminBoolean = true;
+        }
+        else if (opt == 2)
+        {
+            mns_secreto1 = "Bienvenido Investigador";
+            GlobalAtributtes.InvestigatorBoolean = true;
+        }
+        else
+        {
+            mns_secreto1 = "Contraseña incorrecta";
+        }
+
+    }
+}
