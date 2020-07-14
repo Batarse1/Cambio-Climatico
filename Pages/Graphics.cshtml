@@ -30,14 +30,14 @@
                         let massPopChart = new Chart(myChart, {
                             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                             data: {
-                                labels: ['@Model.centrales[0].nombre', '@Model.centrales[1].nombre', 'Cerrón Grande', '@Model.centrales[3].nombre'],
+                                labels: ['@Model.centrales[Model.centrales[0].id - 1].nombre', '@Model.centrales[Model.centrales[1].id - 1].nombre', '@Model.centrales[Model.centrales[2].id - 1].nombre', '@Model.centrales[Model.centrales[3].id - 1].nombre'],
                                 datasets: [{
                                     label: 'KWh',
                                     data: [
-                                        @Model.centrales[0].anual,
-                                        @Model.centrales[1].anual,
-                                        @Model.centrales[2].anual,
-                                        @Model.centrales[3].anual,
+                                        @Model.centrales[Model.centrales[0].id-1].anual,
+                                        @Model.centrales[Model.centrales[1].id-1].anual,
+                                        @Model.centrales[Model.centrales[2].id-1].anual,
+                                        @Model.centrales[Model.centrales[3].id-1].anual,
                                         0
                                     ],
                                     //backgroundColor:'green',
@@ -87,14 +87,14 @@
                         let massPopChart1 = new Chart(myChart2, {
                             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                             data: {
-                                labels: ['@Model.centrales[0].nombre', '@Model.centrales[1].nombre', 'Cerrón Grande', '@Model.centrales[3].nombre'],
+                                labels: ['@Model.centrales[Model.centrales[0].id - 1].nombre', '@Model.centrales[Model.centrales[1].id - 1].nombre', '@Model.centrales[Model.centrales[2].id - 1].nombre', '@Model.centrales[Model.centrales[3].id - 1].nombre'],
                                 datasets: [{
                                     label: 'KWh',
                                     data: [
-                                        @Model.centrales[0].mensual,
-                                        @Model.centrales[1].mensual,
-                                        @Model.centrales[2].mensual,
-                                        @Model.centrales[3].mensual,
+                                        @Model.centrales[Model.centrales[0].id-1].mensual,
+                                        @Model.centrales[Model.centrales[1].id-1].mensual,
+                                        @Model.centrales[Model.centrales[2].id-1].mensual,
+                                        @Model.centrales[Model.centrales[3].id-1].mensual,
                                         0
                                     ],
                                     //backgroundColor:'green',
@@ -146,14 +146,14 @@
                         let massPopChart3 = new Chart(myChart3, {
                             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                             data: {
-                                labels: ['@Model.centrales[0].nombre', '@Model.centrales[1].nombre', 'Cerrón Grande', '@Model.centrales[3].nombre'],
+                                labels: ['@Model.centrales[Model.centrales[0].id - 1].nombre', '@Model.centrales[Model.centrales[1].id - 1].nombre', '@Model.centrales[Model.centrales[2].id - 1].nombre', '@Model.centrales[Model.centrales[3].id - 1].nombre'],
                                 datasets: [{
                                     label: 'KWh',
                                     data: [
-                                        @Model.centrales[0].semanal,
-                                        @Model.centrales[1].semanal,
-                                        @Model.centrales[2].semanal,
-                                        @Model.centrales[3].semanal,
+                                        @Model.centrales[Model.centrales[0].id-1].semanal,
+                                        @Model.centrales[Model.centrales[1].id-1].semanal,
+                                        @Model.centrales[Model.centrales[2].id-1].semanal,
+                                        @Model.centrales[Model.centrales[3].id-1].semanal,
                                         0
                                     ],
                                     //backgroundColor:'green',
