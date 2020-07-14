@@ -30,14 +30,14 @@
                         let massPopChart = new Chart(myChart, {
                             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                             data: {
-                                labels: ['Guajoyo', 'Cerrón Grande', '5 de Noviembre', '15 de Septiembre'],
+                                labels: ['@Model.centrales[0].nombre', '@Model.centrales[1].nombre', 'Cerrón Grande', '@Model.centrales[3].nombre'],
                                 datasets: [{
-                                    label: 'KW',
+                                    label: 'KWh',
                                     data: [
-                                        10,
-                                        20,
-                                        40,
-                                        5,
+                                        @Model.centrales[0].anual,
+                                        @Model.centrales[1].anual,
+                                        @Model.centrales[2].anual,
+                                        @Model.centrales[3].anual,
                                         0
                                     ],
                                     //backgroundColor:'green',
@@ -87,14 +87,14 @@
                         let massPopChart1 = new Chart(myChart2, {
                             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                             data: {
-                                labels: ['Guajoyo', 'Cerrón Grande', '5 de Noviembre', '15 de Septiembre'],
+                                labels: ['@Model.centrales[0].nombre', '@Model.centrales[1].nombre', 'Cerrón Grande', '@Model.centrales[3].nombre'],
                                 datasets: [{
-                                    label: 'KW',
+                                    label: 'KWh',
                                     data: [
-                                        10,
-                                        20,
-                                        40,
-                                        5,
+                                        @Model.centrales[0].mensual,
+                                        @Model.centrales[1].mensual,
+                                        @Model.centrales[2].mensual,
+                                        @Model.centrales[3].mensual,
                                         0
                                     ],
                                     //backgroundColor:'green',
@@ -146,14 +146,14 @@
                         let massPopChart3 = new Chart(myChart3, {
                             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                             data: {
-                                labels: ['Guajoyo', 'Cerrón Grande', '5 de Noviembre', '15 de Septiembre'],
+                                labels: ['@Model.centrales[0].nombre', '@Model.centrales[1].nombre', 'Cerrón Grande', '@Model.centrales[3].nombre'],
                                 datasets: [{
-                                    label: 'KW',
+                                    label: 'KWh',
                                     data: [
-                                        10,
-                                        20,
-                                        40,
-                                        5,
+                                        @Model.centrales[0].semanal,
+                                        @Model.centrales[1].semanal,
+                                        @Model.centrales[2].semanal,
+                                        @Model.centrales[3].semanal,
                                         0
                                     ],
                                     //backgroundColor:'green',
